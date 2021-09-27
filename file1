@@ -1,0 +1,25 @@
+AWSTemplateFormate: 2010-09-09
+Descrption: This Template creates a vpc and private and public subnet
+Metadata:
+  parametergroups:
+   - label: 
+      default: "VPC CIDR"
+     parameters:
+       - VPCCIDR
+   - Label:
+      default: "subnet CIDR"
+    parameters:
+     - publicsubnetCIDR1
+     - publicsubnetcidr2
+     - privatesubnetCIDR1
+     - privatesubnetCIDR2
+   - Label:
+      Default:
+        - SSHLocation
+    parameters:
+      VPCCIDR:
+        Default: 10.0.0.0/16
+        Description: please enter the IP Range
+        Type: string
+   
+       
